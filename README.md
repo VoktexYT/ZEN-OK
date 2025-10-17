@@ -1,3 +1,3 @@
-![Lyzenok Logo](./logo.png)<br>
-Linux distribution based on Arch.<br>
+
+Very minimalist Linux distribution based on Artix.<br>
 Minimalist. Powerful. Fast. Just open, create and shutdown.
