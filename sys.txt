@@ -1,0 +1,13 @@
+i3
+linux-zen
+runit
+artix
+qutebrowser
+vim
+ly
+git
+alacritty
+tmux
+dash
+dmenu
+
