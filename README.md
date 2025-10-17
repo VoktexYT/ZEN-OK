@@ -1,4 +1,4 @@
-<p style="text-align: center">
+<p style="text-align: center;">
   <img alt="ZenOK logo" src="./logo.png" width="300px">
 </p>
 <br>
