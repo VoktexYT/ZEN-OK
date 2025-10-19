@@ -1,0 +1,24 @@
+color=282828
+
+inside-color=282828
+ring-color=689d6a
+text-color=ebdbb2
+
+inside-ver-color=458588
+ring-ver-color=83a598
+text-ver-color=ebdbb2
+
+inside-wrong-color=cc241d
+ring-wrong-color=fb4934
+text-wrong-color=ebdbb2
+
+inside-clear-color=d79921
+ring-clear-color=fabd2f
+text-clear-color=282828
+
+font=JetBrains Mono
+
+indicator-radius=100
+indicator-thickness=10
+show-failed-attempts
+daemonize

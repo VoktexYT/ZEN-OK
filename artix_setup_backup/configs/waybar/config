@@ -1,0 +1,43 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 24,
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["network", "cpu", "memory", "battery", "clock"],
+    
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": false,
+        "format": "{name}"
+    },
+    
+    "sway/window": {
+        "max-length": 50
+    },
+    
+    "network": {
+        "format-wifi": " {signalStrength}%",
+        "format-ethernet": "",
+        "format-disconnected": "󰤭",
+        "tooltip-format": "{ifname}: {ipaddr}"
+    },
+    
+    "cpu": {
+        "format": " {usage}%"
+    },
+    
+    "memory": {
+        "format": " {}%"
+    },
+    
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-icons": ["", "", "", "", ""]
+    },
+    
+    "clock": {
+        "format": " {:%H:%M}",
+        "tooltip-format": "{:%Y-%m-%d}"
+    }
+}
