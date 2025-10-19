@@ -26,10 +26,8 @@ default_floating_border pixel 2
 
 # Gruvbox window colors
 #                       border  bg      text    indicator child_border
-client.focused          $aqua   $aqua   $bg     $orange   $aqua
-client.focused_inactive $gray   $gray   $bg     $gray     $gray
-client.unfocused        $bg     $bg     $gray   $bg       $bg
-client.urgent           $red    $red    $bg     $red      $red
+client.focused          $aqua   $aqua   $bg     $bg   $aqua
+client.unfocused        $bg     $bg     $bg     $bg       $bg
 
 # Wallpaper
 output * bg $bg solid_color
@@ -90,7 +88,7 @@ bindsym $mod+Shift+4 move container to workspace $ws4
 # Window management
 bindsym $mod+f fullscreen toggle
 bindsym $mod+q kill
-bindsym $mod+r reload
+bindsym $mod+r reload 
 
 # System controls
 bindsym $mod+Shift+r exec loginctl reboot
@@ -101,6 +99,7 @@ bindsym $mod+Shift+x exec swaylock
 # AUTOSTART 
 # ============================================================================
 exec /usr/bin/mako
-exec /usr/bin/swayidle -w timeout 300 'swaylock -f' timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' before-sleep 'swaylock -f'
+exec /usr/bin/swayidle -w timeout 60 'swaylock -f' timeout 300 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' before-sleep 'swaylock -f'
 exec waybar
+exec_always sh -c "swaylock -f &"
 
