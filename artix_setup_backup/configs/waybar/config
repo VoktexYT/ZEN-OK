@@ -23,26 +23,28 @@
     },
     
     "pulseaudio": {
-    "format": "{icon} {volume}%",
-    "format-muted": "󰖁  {volume}%",
-    "format-icons": {
-        "headphone": "󰋋",
-        "hands-free": "󰋎",
-        "headset": "󰋎",
-        "phone": "",
-        "portable": "",
-        "car": "",
-        "default": ["󰕿", "󰖀", "󰕾"]
+        "format": "{icon} {volume}%",
+        "format-muted": "󰖁  {volume}%",
+        "format-icons": {
+            "headphone": "󰋋",
+            "hands-free": "󰋎",
+            "headset": "󰋎",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-click-right": "pavucontrol",
+        "scroll-step": 5,
+        "smooth-scrolling-threshold": 1
     },
-    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
-    "on-click-right": "pavucontrol",
-    "scroll-step": 5,
-    "smooth-scrolling-threshold": 1
-},
-   "network": {
-    "format-wifi": "󰖩  {essid} [{ipaddr}]",
-    "format-disconnected": "󰖪  Disconnected",
-},
+   
+    "network": {
+        "format-wifi": "󰖩  {essid} [{ipaddr}]",
+        "format-disconnected": "󰖪  Disconnected",
+    },
     
     "cpu": {
         "interval": 2,

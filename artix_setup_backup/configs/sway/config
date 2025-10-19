@@ -1,18 +1,9 @@
-# notifycation
-exec_always mako
-
-# sound system
-exec_always pipewire
-exec_always pipewire-pulse
-exec_always wireplumber
-
 # Gruvbox Dark colors
 set $bg     #282828
 set $fg     #ebdbb2
 set $red    #cc241d
 set $green  #98971a
 set $yellow #d79921
-
 set $blue   #458588
 set $purple #b16286
 set $aqua   #689d6a
@@ -24,10 +15,6 @@ font pango:JetBrains Mono 10
 
 # Mod key
 set $mod Mod4
-
-#screenshot system
-bindsym $mod+s exec grim -g "$(slurp)" - | wl-copy && notify-send -u low "📸 Screenshot" "Screenshot saved to cipboard"
-bindsym $mod+Shift+s exec grim ~/Screenshots/screenshot-$(date +%Y%m%d-%H%M%S).png && notify-send -u low "📸 Screenshot" "Screenshot saved to ~/Screenshots"
 
 # Gaps
 gaps inner 8
@@ -44,7 +31,7 @@ client.focused_inactive $gray   $gray   $bg     $gray     $gray
 client.unfocused        $bg     $bg     $gray   $bg       $bg
 client.urgent           $red    $red    $bg     $red      $red
 
-# Wallpaper (optionnel, uni gruvbox)
+# Wallpaper
 output * bg $bg solid_color
 
 # Workspaces
@@ -52,6 +39,10 @@ set $ws1 1
 set $ws2 2
 set $ws3 3
 set $ws4 4
+
+# Screenshot system
+bindsym $mod+s exec grim -g "$(slurp)" - | wl-copy && notify-send -u low "📸 Screenshot" "Screenshot saved to clipboard"
+bindsym $mod+Shift+s exec grim ~/Screenshots/screenshot-$(date +%Y%m%d-%H%M%S).png && notify-send -u low "📸 Screenshot" "Screenshot saved to ~/Screenshots"
 
 # Apps
 bindsym $mod+t exec foot
@@ -65,14 +56,12 @@ bindsym $mod+d exec bemenu-run -i -l 10 -p '>' \
     --hb '$aqua' --tf '$fg' --ff '$fg' \
     --nf '$fg' --hf '$bg'
 
+# Media keys
 bindsym XF86MonBrightnessUp exec brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
-
 bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
 bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
 bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
-
-# Microphone
 bindsym XF86AudioMicMute exec wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
 
 # Navigation vim-style
@@ -98,31 +87,20 @@ bindsym $mod+Shift+2 move container to workspace $ws2
 bindsym $mod+Shift+3 move container to workspace $ws3
 bindsym $mod+Shift+4 move container to workspace $ws4
 
-# Fullscreen
+# Window management
 bindsym $mod+f fullscreen toggle
-
-# Kill
 bindsym $mod+q kill
-
-# Reload
 bindsym $mod+r reload
 
-# Exit
+# System controls
 bindsym $mod+Shift+r exec loginctl reboot
 bindsym $mod+Shift+o exec loginctl poweroff
 bindsym $mod+Shift+x exec swaylock
 
-# Waybar
-exec_always waybar
-
-exec_always swayidle -w \
-    timeout 60 'swaylock -f' \
-    timeout 300 'swaymsg "output * dpms off"' \
-    resume 'swaymsg "output * dpms on"' \
-    before-sleep 'swaylock -f'
-
-
-# Lock screen
-exec_always swaylock -f
-
+# ============================================================================
+# AUTOSTART 
+# ============================================================================
+exec /usr/bin/mako
+exec /usr/bin/swayidle -w timeout 300 'swaylock -f' timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' before-sleep 'swaylock -f'
+exec waybar
 

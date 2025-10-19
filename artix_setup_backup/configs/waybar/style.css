@@ -58,6 +58,7 @@ window#waybar {
   padding: 0 10px;
   color: #282828;
   background: #b16286;
+  font-weight: bold;
 }
 
 #pulseaudio.muted {
@@ -70,6 +71,7 @@ window#waybar {
   padding: 0 10px;
   color: #282828;
   background: #689d6a;
+  font-weight: bold;
 }
 
 #network.disconnected {
@@ -82,6 +84,7 @@ window#waybar {
   padding: 0 10px;
   color: #282828;
   background: #d79921;
+  font-weight: bold;
 }
 
 /* Memory */
@@ -89,6 +92,7 @@ window#waybar {
   padding: 0 10px;
   color: #282828;
   background: #d65d0e;
+  font-weight: bold;
 }
 
 /* Battery */
@@ -96,6 +100,7 @@ window#waybar {
   padding: 0 10px;
   color: #282828;
   background: #98971a;
+  font-weight: bold;
 }
 
 #battery.charging {
