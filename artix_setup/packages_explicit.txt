@@ -15,7 +15,7 @@ gtk3 1:3.24.51-1
 iwd 3.10-1
 iwd-runit 20220305-2
 iwgtk 0.9-1
-less 1:679-1
+less 1:685-1
 libnotify 0.8.7-1
 linux-firmware 20251011-1
 linux-zen 6.16.9.zen1-1
