@@ -1,64 +1,119 @@
 * {
-    font-family: "JetBrains Mono", monospace;
-    font-size: 13px;
-    border: none;
-    border-radius: 0;
-    min-height: 0;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+  border: none;
+  border-radius: 0;
+  min-height: 0;
 }
 
 window#waybar {
-    background: #282828;
-    color: #ebdbb2;
+  background: #282828;
+  color: #ebdbb2;
+  border-bottom: 2px solid #3c3836;
 }
 
+/* Workspaces */
 #workspaces button {
-    padding: 0 8px;
-    color: #a89984;
-    background: transparent;
+  padding: 0 8px;
+  color: #a89984;
+  background: transparent;
+}
+
+#workspaces button:hover {
+  background: #3c3836;
+  color: #ebdbb2;
 }
 
 #workspaces button.focused {
-    color: #282828;
-    background: #689d6a;
+  color: #282828;
+  background: #689d6a;
+  font-weight: bold;
 }
 
 #workspaces button.urgent {
-    color: #282828;
-    background: #cc241d;
+  color: #282828;
+  background: #cc241d;
+  font-weight: bold;
 }
 
+/* Mode Sway */
 #mode {
-    padding: 0 10px;
-    color: #282828;
-    background: #d79921;
-    font-weight: bold;
+  padding: 0 10px;
+  color: #282828;
+  background: #d79921;
+  font-weight: bold;
 }
 
+/* Fenêtre active */
 #window {
-    color: #ebdbb2;
+  color: #ebdbb2;
+  font-weight: 500;
 }
 
-#network,
-#cpu,
-#memory,
-#battery,
+/* Horloge */
 #clock {
-    padding: 0 10px;
-    color: #ebdbb2;
+  padding: 0 12px;
+  color: #282828;
+  background: #458588;
+  font-weight: bold;
+}
+
+/* PulseAudio */
+#pulseaudio {
+  padding: 0 10px;
+  color: #282828;
+  background: #b16286;
+}
+
+#pulseaudio.muted {
+  color: #282828;
+  background: #cc241d;
+}
+
+/* Network */
+#network {
+  padding: 0 10px;
+  color: #282828;
+  background: #689d6a;
 }
 
 #network.disconnected {
-    color: #cc241d;
+  color: #282828;
+  background: #cc241d;
+}
+
+/* CPU */
+#cpu {
+  padding: 0 10px;
+  color: #282828;
+  background: #d79921;
+}
+
+/* Memory */
+#memory {
+  padding: 0 10px;
+  color: #282828;
+  background: #d65d0e;
+}
+
+/* Battery */
+#battery {
+  padding: 0 10px;
+  color: #282828;
+  background: #98971a;
 }
 
 #battery.charging {
-    color: #98971a;
+  color: #282828;
+  background: #689d6a;
 }
 
-#battery.warning {
-    color: #d79921;
+#battery.warning:not(.charging) {
+  color: #282828;
+  background: #d79921;
 }
 
-#battery.critical {
-    color: #cc241d;
+#battery.critical:not(.charging) {
+  color: #282828;
+  background: #cc241d;
 }

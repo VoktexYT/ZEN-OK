@@ -1,3 +1,11 @@
+# Lock screen
+exec swaylock -f
+
+# sound system
+exec pipewire
+exec pipewire-pulse
+exec wireplumber
+
 # Gruvbox Dark colors
 set $bg     #282828
 set $fg     #ebdbb2
@@ -45,13 +53,23 @@ set $ws4 4
 bindsym $mod+t exec foot
 bindsym $mod+Return exec foot
 bindsym $mod+w exec qutebrowser
-bindsym $mod+Shift+w exec foot -e bash -c "nmtui"
+bindsym $mod+Shift+w exec iwgtk
 bindsym $mod+n exec foot -e nvim 
 bindsym $mod+d exec bemenu-run -i -l 10 -p '>' \
     --fn 'JetBrains Mono 11' \
     --tb '$bg' --fb '$bg' --nb '$bg' \
     --hb '$aqua' --tf '$fg' --ff '$fg' \
     --nf '$fg' --hf '$bg'
+
+bindsym XF86MonBrightnessUp exec brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+
+bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
+bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+
+# Microphone
+bindsym XF86AudioMicMute exec wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
 
 # Navigation vim-style
 bindsym $mod+h focus left
