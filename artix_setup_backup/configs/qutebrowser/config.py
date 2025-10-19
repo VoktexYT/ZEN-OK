@@ -1,8 +1,8 @@
-
 config.load_autoconfig()
 
-c.fonts.default_family = 'JetBrains Mono'
 
+c.url.default_page = "about:blank"
+c.url.start_pages = 'about:blank'
 
 # Gruvbox Dark theme
 c.colors.completion.fg = '#ebdbb2'
@@ -51,5 +51,8 @@ c.colors.downloads.stop.bg = '#689d6a'
 c.colors.webpage.darkmode.enabled = True
 
 # Font
-c.fonts.default_family = 'JetBrains Mono'
+c.fonts.default_family = 'JetBrainsMono Nerd Font'
+c.fonts.default_family = 'JetBrainsMono NF'
+c.fonts.default_family = 'JetBrains Mono NL Nerd Font'
+
 c.fonts.default_size = '11pt'

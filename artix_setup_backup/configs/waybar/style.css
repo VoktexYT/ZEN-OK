@@ -19,11 +19,6 @@ window#waybar {
   background: transparent;
 }
 
-#workspaces button:hover {
-  background: #3c3836;
-  color: #ebdbb2;
-}
-
 #workspaces button.focused {
   color: #282828;
   background: #689d6a;

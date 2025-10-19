@@ -6,6 +6,8 @@
 
 config_version: 2
 settings:
+  fonts.default_family:
+    global: JetBrainsMono Nerd Font
   tabs.favicons.show:
     global: never
   tabs.title.format:

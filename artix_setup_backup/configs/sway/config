@@ -1,10 +1,10 @@
-# Lock screen
-exec swaylock -f
+# notifycation
+exec_always mako
 
 # sound system
-exec pipewire
-exec pipewire-pulse
-exec wireplumber
+exec_always pipewire
+exec_always pipewire-pulse
+exec_always wireplumber
 
 # Gruvbox Dark colors
 set $bg     #282828
@@ -24,6 +24,10 @@ font pango:JetBrains Mono 10
 
 # Mod key
 set $mod Mod4
+
+#screenshot system
+bindsym $mod+s exec grim -g "$(slurp)" - | wl-copy && notify-send -u low "📸 Screenshot" "Screenshot saved to cipboard"
+bindsym $mod+Shift+s exec grim ~/Screenshots/screenshot-$(date +%Y%m%d-%H%M%S).png && notify-send -u low "📸 Screenshot" "Screenshot saved to ~/Screenshots"
 
 # Gaps
 gaps inner 8
@@ -109,12 +113,16 @@ bindsym $mod+Shift+o exec loginctl poweroff
 bindsym $mod+Shift+x exec swaylock
 
 # Waybar
-bar {
-    swaybar_command waybar
-}
+exec_always waybar
 
-exec swayidle -w \
+exec_always swayidle -w \
     timeout 60 'swaylock -f' \
     timeout 300 'swaymsg "output * dpms off"' \
     resume 'swaymsg "output * dpms on"' \
     before-sleep 'swaylock -f'
+
+
+# Lock screen
+exec_always swaylock -f
+
+

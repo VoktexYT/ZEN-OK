@@ -16,9 +16,11 @@ iwd 3.10-1
 iwd-runit 20220305-2
 iwgtk 0.9-1
 less 1:679-1
+libnotify 0.8.7-1
 linux-firmware 20251011-1
 linux-zen 6.16.9.zen1-1
 linux-zen-headers 6.16.9.zen1-1
+mako 1.10.0-1
 neovim 0.11.4-1
 openresolv 3.17.0-1
 pipewire-alsa 1:1.4.9-1
