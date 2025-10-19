@@ -1,0 +1,6 @@
+2025-10-18 02:06:12.399 [info] update#setState idle
+2025-10-18 02:06:17.841 [error] [UtilityProcessWorker]: terminated unexpectedly with code 2, signal: unknown
+2025-10-18 02:06:17.842 [error] [UtilityProcess id: 1, type: fileWatcher, pid: 2117]: crashed with code 2 and reason 'killed'
+2025-10-18 02:06:17.851 [info] Extension host with pid 2154 exited with code: 2, signal: unknown.
+2025-10-18 02:06:17.851 [error] [UtilityProcess id: 1, type: extensionHost, pid: 2154]: crashed with code 2 and reason 'killed'
+2025-10-18 02:06:17.854 [error] [UtilityProcess type: shared-process, pid: 2116]: crashed with code 2 and reason 'killed'

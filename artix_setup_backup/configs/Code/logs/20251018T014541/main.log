@@ -1,0 +1,7 @@
+2025-10-18 01:45:41.252 [info] update#setState idle
+2025-10-18 01:45:54.543 [error] [UtilityProcessWorker]: terminated unexpectedly with code 2, signal: unknown
+2025-10-18 01:45:54.543 [error] [UtilityProcess id: 1, type: fileWatcher, pid: 6240]: crashed with code 2 and reason 'killed'
+2025-10-18 01:45:54.545 [info] Extension host with pid 6267 exited with code: 2, signal: unknown.
+2025-10-18 01:45:54.545 [error] [UtilityProcess id: 1, type: extensionHost, pid: 6267]: crashed with code 2 and reason 'killed'
+2025-10-18 01:45:54.546 [error] [UtilityProcess type: shared-process, pid: 6239]: crashed with code 2 and reason 'killed'
+2025-10-18 01:45:54.826 [info] Extension host with pid 6388 exited with code: 0, signal: unknown.

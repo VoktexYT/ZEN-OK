@@ -1,0 +1,3 @@
+2025-10-18 02:05:45.708 [info] update#setState idle
+2025-10-18 02:05:46.428 [error] vscode-file: Refused to load resource /home/voktex/Downloads/VSCode-linux-x64/resources/app/extensions/theme-seti/icons/seti.woff from vscode-file: protocol (original URL: vscode-file://vscode-app/home/voktex/Downloads/VSCode-linux-x64/resources/app/extensions/theme-seti/icons/seti.woff)
+2025-10-18 02:05:48.370 [info] Extension host with pid 1885 exited with code: 0, signal: unknown.

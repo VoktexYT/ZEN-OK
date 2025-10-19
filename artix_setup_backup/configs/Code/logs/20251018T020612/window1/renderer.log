@@ -1,0 +1,6 @@
+2025-10-18 02:06:12.996 [info] Started local extension host with pid 2154.
+2025-10-18 02:06:13.232 [info] MCP Registry configured: https://api.mcp.github.com/2025-09-15
+2025-10-18 02:06:13.303 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-10-18 02:06:15.549 [info] [perf] Render performance baseline is 13ms
+2025-10-18 02:06:17.844 [error] [UtilityProcessWorker]: terminated unexpectedly with code 2, signal: unknown
+2025-10-18 02:06:17.846 [error] [File Watcher (universal)] restarting watcher after unexpected error: terminated by itself unexpectedly with code 2, signal: unknown (ETERM)

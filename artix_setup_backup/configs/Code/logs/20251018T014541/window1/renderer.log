@@ -1,0 +1,12 @@
+2025-10-18 01:45:42.000 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
+2025-10-18 01:45:42.076 [info] Started local extension host with pid 6267.
+2025-10-18 01:45:42.099 [info] Started initializing default profile extensions in extensions installation folder. file:///home/voktex/.vscode/extensions
+2025-10-18 01:45:42.207 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/voktex/.vscode/extensions
+2025-10-18 01:45:42.417 [info] MCP Registry configured: https://api.mcp.github.com/2025-09-15
+2025-10-18 01:45:42.511 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-10-18 01:45:44.923 [info] [perf] Render performance baseline is 12ms
+2025-10-18 01:45:54.546 [error] [UtilityProcessWorker]: terminated unexpectedly with code 2, signal: unknown
+2025-10-18 01:45:54.546 [error] [File Watcher (universal)] restarting watcher after unexpected error: terminated by itself unexpectedly with code 2, signal: unknown (ETERM)
+2025-10-18 01:45:54.550 [error] Extension host (LocalProcess pid: 6267) terminated unexpectedly. The following extensions were running: vscode.github-authentication, vscode.emmet, vscode.git-base, vscode.git, vscode.github, vscode.debug-auto-launch, vscode.merge-conflict
+2025-10-18 01:45:54.550 [info] Automatically restarting the extension host.
+2025-10-18 01:45:54.560 [info] Started local extension host with pid 6388.

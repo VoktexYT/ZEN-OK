@@ -1,0 +1,42 @@
+# Couleurs de base
+background-color=#282828
+text-color=#ebdbb2
+border-color=#458588
+progress-color=over #689d6a
+
+# Style général
+font=JetBrainsMono 10
+width=350
+height=150
+margin=30
+padding=15
+border-size=2
+border-radius=5
+icons=1
+max-icon-size=48
+
+# Position
+anchor=top-right
+layer=overlay
+
+# Comportement
+default-timeout=8000
+ignore-timeout=0
+group-by=app-name
+
+# max-visible doit être dans un critère
+[anchor=top-right]
+max-visible=5
+
+# Couleurs par urgence
+[urgency=low]
+border-color=#98971a
+default-timeout=5000
+
+[urgency=normal]
+border-color=#458588
+default-timeout=10000
+
+[urgency=critical]
+border-color=#cc241d
+default-timeout=0
