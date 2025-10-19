@@ -45,8 +45,13 @@ set $ws4 4
 bindsym $mod+t exec foot
 bindsym $mod+Return exec foot
 bindsym $mod+w exec qutebrowser
-
+bindsym $mod+Shift+w exec foot -e bash -c "nmtui"
 bindsym $mod+n exec foot -e nvim 
+bindsym $mod+d exec bemenu-run -i -l 10 -p '>' \
+    --fn 'JetBrains Mono 11' \
+    --tb '$bg' --fb '$bg' --nb '$bg' \
+    --hb '$aqua' --tf '$fg' --ff '$fg' \
+    --nf '$fg' --hf '$bg'
 
 # Navigation vim-style
 bindsym $mod+h focus left
