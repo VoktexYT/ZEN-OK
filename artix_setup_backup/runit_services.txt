@@ -1,11 +1,10 @@
-total 12
-drwxr-xr-x 3 root root 4096 Oct 19 14:38 .
+total 8
+drwxr-xr-x 2 root root 4096 Oct 21 21:38 .
 drwxr-xr-x 4 root root 4096 Oct 17 22:50 ..
 lrwxrwxrwx 1 root root   30 Oct 18 18:03 agetty-autologin -> /etc/runit/sv/agetty-autologin
 lrwxrwxrwx 1 root root   13 Mar 14  2022 dbus -> ../../sv/dbus
-lrwxrwxrwx 1 root root   20 Oct 19 02:02 dhcpcd -> /etc/runit/sv/dhcpcd
-lrwxrwxrwx 1 root root   21 Oct 19 12:55 elogind -> /etc/runit/sv/elogind
+lrwxrwxrwx 1 root root   15 Oct 21 20:26 elogind -> /etc/sv/elogind
 lrwxrwxrwx 1 root root   17 Oct 19 08:53 iwd -> /etc/runit/sv/iwd
-lrwxrwxrwx 1 root root   28 Oct 19 12:55 NetworkManager -> /etc/runit/sv/NetworkManager
-drwx------ 3 root root 4096 Oct 18 13:28 supervise
+lrwxrwxrwx 1 root root   22 Oct 21 21:38 libvirtd -> /etc/runit/sv/libvirtd
 lrwxrwxrwx 1 root root   19 Mar 13  2025 udevd -> /etc/runit/sv/udevd
+lrwxrwxrwx 1 root root   22 Oct 21 21:38 virtlogd -> /etc/runit/sv/virtlogd
